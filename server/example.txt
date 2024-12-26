@@ -1,0 +1,7 @@
+
+# python valid request
+res = r.post('http://127.0.0.1:8000/send/jvm-memory', data=json.dumps({'value':256, 'date': 1735145400, 'instance':'HOST-3'}))
+
+# get all rows in the table
+cursor.execute('select * from jvm_memory').fetchall()
+
